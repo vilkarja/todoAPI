@@ -10,7 +10,7 @@ MongoClient.connect(url, (err, db) => {
     }
     console.log('Connected to MongoDb server');
 
-    db.collection('Todos').deleteMany({text: 'Make the food'}).then((result) => {
+    db.collection('Todos').deleteMany({compledted: false}).then((result) => {
         console.log(result);
     });
     db.collection('Todos').deleteOne({text: 'Make the food'}).then((result) => {

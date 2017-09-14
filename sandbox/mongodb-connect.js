@@ -12,7 +12,7 @@ MongoClient.connect(url, (err, db) => {
 
     db.collection('Todos').insertOne({
         text: 'something to do',
-        compledted: false
+        completed: false
     }, (err, res) => {
         if (err) {
             return console.log(' Unable to insert todo', err)
@@ -21,18 +21,18 @@ MongoClient.connect(url, (err, db) => {
         console.log(JSON.stringify(res.ops, undefined, 2));
     });
 
-    db.collection('Users').insertOne({
-        name: 'Ville',
-        age: 22,
-        location: 'Tampere'
-    }, (err, res) => {
-        if (err) {
-            return console.log(' Unable to insert user', err)
-        }
+    // db.collection('Users').insertOne({
+    //     name: 'Ville',
+    //     age: 22,
+    //     location: 'Tampere'
+    // }, (err, res) => {
+    //     if (err) {
+    //         return console.log(' Unable to insert user', err)
+    //     }
 
-        console.log(JSON.stringify(res.ops, undefined, 2));
-        console.log(res.ops[0]._id.getTimestamp());
-    });
+    //     console.log(JSON.stringify(res.ops, undefined, 2));
+    //     console.log(res.ops[0]._id.getTimestamp());
+    // });
 
 
     db.close();
