@@ -2,7 +2,7 @@ const {ObjectID} = require('mongodb');
 const {Todo} = require('./../../models/todo')
 const {User} = require('./../../models/user')
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
+
 
 const userOneID = new ObjectID();
 const userTwoID = new ObjectID();
