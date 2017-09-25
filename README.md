@@ -23,6 +23,8 @@ npm start
 ```
 After this you can create different GET, POST, DELETE and PATCH commands via Postman, for example.
 
+Different commands will be posted soon
+
 ## Running the tests
 
 To run automated tests for the application, simply run 
