@@ -21,9 +21,8 @@ With MongoDB running in the background you can run the application with command
 ```
 npm start
 ```
-After this you can create different GET, POST, DELETE and PATCH commands via Postman, for example.
+After this you can create different GET, POST, DELETE and PATCH commands via Postman
 
-Different commands will be posted soon
 
 ## Running the tests
 
@@ -46,5 +45,6 @@ All the tests will be done in one go
 ## Todo
 
 * Create UI to use the API
+* Add examples for Postman commands
 
 
